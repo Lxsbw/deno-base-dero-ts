@@ -1,5 +1,5 @@
-import { MobilePhoneSchema, MobilePhone } from '../models/mobile-phone.ts';
-import { Bson } from 'https://deno.land/x/mongo/mod.ts';
+import { MobilePhone } from '../models/mobile-phone.ts';
+import { Bson } from '../deps.ts';
 
 class mobilePhoneService {
   static async save(param: any) {

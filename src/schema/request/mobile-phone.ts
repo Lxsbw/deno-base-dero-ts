@@ -1,4 +1,4 @@
-import { IsNumber, IsString } from 'https://cdn.skypack.dev/class-validator?dts';
+import { IsNumber, IsString } from '../../deps.ts';
 
 export class MobilePhoneSaveIn {
   @IsString()

@@ -13,5 +13,3 @@ export interface MobilePhoneSchema {
 
 const db = client.database('testdb');
 export const MobilePhone = db.collection<MobilePhoneSchema>('mobile-phone');
-
-// export { MobilePhoneSchema, MobilePhone };

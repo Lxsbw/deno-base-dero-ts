@@ -1,7 +1,7 @@
 import MobilePhoneController from './controller/mobile-phone.ts';
-import { Dero } from 'https://deno.land/x/dero/mod.ts';
-import { DocumentBuilder, swagger } from 'https://deno.land/x/dero_swagger@0.0.6/mod.ts';
-import { validationMetadatasToSchemas } from 'https://cdn.skypack.dev/class-validator-jsonschema?dts';
+import { Dero } from './deps.ts';
+import { DocumentBuilder, swagger } from './deps.ts';
+import { validationMetadatasToSchemas } from './deps.ts';
 
 class App extends Dero {
   constructor() {
