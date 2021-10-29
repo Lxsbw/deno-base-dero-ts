@@ -3,7 +3,8 @@ scripts:
   start: deno run --allow-net ./src/index.ts
   dev: denon run --allow-net ./src/index.ts
   test: deno test --allow-net server_test.ts
-  prd: pm2 start 'deno run --allow-net ./src/index.ts' --name=deno-base
+  prd: pm2 start ./src/index.ts --interpreter="deno" --interpreter-args="run --allow-net" --name=deno-base
+  prd_old: pm2 start 'deno run --allow-net ./src/index.ts' --name=deno-base
   stop: pm2 stop deno-base && pm2 delete deno-base
 
 
