@@ -2,6 +2,9 @@ import { BaseController, Controller, Get, Post, Put, Delete, Patch } from '../de
 import { ApiDocument, ApiOperation, ApiResponse, ApiParameter, ApiRequestBody } from '../deps.ts';
 import mobilePhoneService from '../service/mobile-phone.ts';
 import { MobilePhoneSaveIn, MobilePhoneModifyIn, MobilePhoneModifyInPatch } from '../schema/request/mobile-phone.ts';
+// import { Linq } from 'https://deno.land/x/linqts@v1.0.1/mod.ts';
+// import { Linq } from '../../../linqts-deno/mod.ts';
+import { Linq } from '../deps.ts';
 
 @ApiDocument({
   name: 'MobilePhone',
@@ -88,6 +91,37 @@ class MobilePhoneController extends BaseController {
     const { id } = this.request.params;
     const result = await mobilePhoneService.deleteById(id);
     return { count: result };
+  }
+
+  @ApiParameter({ name: 'model_name', in: 'query', description: '手机型号' })
+  @ApiResponse(200, { description: 'OK' })
+  @ApiOperation({ summary: 'Linq', description: 'Linq' })
+  @Get('/getlinq')
+  async getlinq() {
+    let orderByID, persons, thenByAge, thenByName;
+
+    interface Person {
+      ID: number;
+      Age: number;
+      Name: string;
+    }
+
+    persons = [
+      { ID: 0, Age: 30, Name: 'A' },
+      { ID: 1, Age: 25, Name: 'B' },
+      { ID: 2, Age: 2, Name: 'G' },
+      { ID: 2, Age: 18, Name: 'C' },
+      { ID: 1, Age: 30, Name: 'D' },
+      { ID: 1, Age: 25, Name: 'E' },
+      { ID: 2, Age: 15, Name: 'F' }
+    ];
+
+    thenByName = new Linq<Person>(persons)
+      .OrderByDescending(x => x.ID)
+      .ThenBy(x => x.Age)
+      .ThenByDescending(x => x.Name)
+      .ToArray();
+    return thenByName;
   }
 }
 

@@ -6,3 +6,5 @@ export { DocumentBuilder, swagger, ApiDocument, ApiOperation, ApiResponse, ApiPa
 
 export { validationMetadatasToSchemas } from 'https://cdn.skypack.dev/class-validator-jsonschema?dts';
 export { IsNumber, IsString } from 'https://cdn.skypack.dev/class-validator?dts';
+
+export { Linq } from 'https://deno.land/x/linqts@v1.0.1/mod.ts';
