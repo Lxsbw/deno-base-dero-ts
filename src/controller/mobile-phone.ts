@@ -2,7 +2,7 @@ import { BaseController, Controller, Get, Post, Put, Delete, Patch } from '../de
 import { ApiDocument, ApiOperation, ApiResponse, ApiParameter, ApiRequestBody } from '../deps.ts';
 import mobilePhoneService from '../service/mobile-phone.ts';
 import { MobilePhoneSaveIn, MobilePhoneModifyIn, MobilePhoneModifyInPatch } from '../schema/request/mobile-phone.ts';
-// import { Linq } from 'https://deno.land/x/linqts@1.0.3/mod.ts';
+// import { Linq } from 'https://deno.land/x/linqts@1.0.5/mod.ts';
 // import { Linq } from '../../../linqts-deno/mod.ts';
 import { Linq } from '../deps.ts';
 

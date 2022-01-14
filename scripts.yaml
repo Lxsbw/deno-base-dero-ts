@@ -7,7 +7,6 @@ scripts:
   prd_old: pm2 start 'deno run --allow-net ./src/index.ts' --name=deno-base
   stop: pm2 stop deno-base && pm2 delete deno-base
 
-
 # 普通方式
 # deno run --allow-net ./src/index.ts
 
@@ -17,4 +16,4 @@ scripts:
 # denon run --allow-net ./src/index.ts
 
 # 安装velociraptor（结合本文件，起到类似npm run效果，格式：vr run xxx / vr xxx）
-# deno install -qAn vr https://deno.land/x/velociraptor@1.2.0/cli.ts
+# deno install -qAn vr https://deno.land/x/velociraptor@1.3.0/cli.ts
