@@ -4,6 +4,7 @@ import mobilePhoneService from '../service/mobile-phone.ts';
 import { MobilePhoneSaveIn, MobilePhoneModifyIn, MobilePhoneModifyInPatch } from '../schema/request/mobile-phone.ts';
 // import { Linq } from 'https://deno.land/x/linqts@1.0.5/mod.ts';
 // import { Linq } from '../../../linqts-deno/mod.ts';
+// import { Linq } from '../../../linqjs-deno/index.js';
 import { Linq } from '../deps.ts';
 
 @ApiDocument({
@@ -121,6 +122,7 @@ class MobilePhoneController extends BaseController {
       .ThenBy(x => x.Age)
       .ThenByDescending(x => x.Name)
       .ToArray();
+    console.log('thenByName:', thenByName);
     return thenByName;
   }
 }
