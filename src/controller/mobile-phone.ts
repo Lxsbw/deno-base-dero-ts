@@ -117,12 +117,19 @@ class MobilePhoneController extends BaseController {
       { ID: 2, Age: 15, Name: 'F' }
     ];
 
-    thenByName = new Linq<Person>(persons)
-      .OrderByDescending(x => x.ID)
-      .ThenBy(x => x.Age)
-      .ThenByDescending(x => x.Name)
+    // thenByName = new Linq<Person>(persons)
+    //   .OrderByDescending(x => x.ID)
+    //   .ThenBy(x => x.Age)
+    //   .ThenByDescending(x => x.Name)
+    //   .ToArray();
+    thenByName = new Linq(persons)
+      .OrderByDescending((x: Person) => x.ID)
+      .ThenBy((x: Person) => x.Age)
+      .ThenByDescending((x: Person) => x.Name)
       .ToArray();
+
     console.log('thenByName:', thenByName);
+
     return thenByName;
   }
 }
