@@ -9,7 +9,7 @@ import { Linq } from '../deps.ts';
 
 @ApiDocument({
   name: 'MobilePhone',
-  description: 'MobilePhone description'
+  description: 'MobilePhone description',
 })
 @Controller('/api/mobile-phone')
 class MobilePhoneController extends BaseController {
@@ -39,7 +39,7 @@ class MobilePhoneController extends BaseController {
   @ApiRequestBody({
     description: '创建手机-输入参数',
     required: true,
-    schema: MobilePhoneSaveIn
+    schema: MobilePhoneSaveIn,
   })
   @ApiResponse(201, { description: 'Created' })
   @ApiOperation({ summary: '添加手机', description: '添加手机' })
@@ -54,7 +54,7 @@ class MobilePhoneController extends BaseController {
   @ApiRequestBody({
     description: '修改手机-输入参数',
     required: true,
-    schema: MobilePhoneModifyIn
+    schema: MobilePhoneModifyIn,
   })
   @ApiResponse(201, { description: 'Updated' })
   @ApiOperation({ summary: '更新手机', description: '更新手机' })
@@ -71,7 +71,7 @@ class MobilePhoneController extends BaseController {
   @ApiRequestBody({
     description: '修改手机-输入参数',
     required: true,
-    schema: MobilePhoneModifyInPatch
+    schema: MobilePhoneModifyInPatch,
   })
   @ApiResponse(201, { description: 'Updated' })
   @ApiOperation({ summary: '更新手机', description: '更新手机' })
@@ -114,7 +114,7 @@ class MobilePhoneController extends BaseController {
       { ID: 2, Age: 18, Name: 'C' },
       { ID: 1, Age: 30, Name: 'D' },
       { ID: 1, Age: 25, Name: 'E' },
-      { ID: 2, Age: 15, Name: 'F' }
+      { ID: 2, Age: 15, Name: 'F' },
     ];
 
     // thenByName = new Linq<Person>(persons)

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run ./src/index.ts",
+      "allow": ["net", "env"],
+      "watch": false
+    },
+    "dev": {
+      "cmd": "deno run ./src/index.ts",
+      "allow": ["net", "env"]
+    },
+    "prd": {
+      "cmd": "bash ./src/shell/app.sh deno-base start ./src/index.ts",
+      "watch": false
+    },
+    "stop": {
+      "cmd": "bash ./src/shell/app.sh deno-base stop",
+      "watch": false
+    }
+  }
+}
