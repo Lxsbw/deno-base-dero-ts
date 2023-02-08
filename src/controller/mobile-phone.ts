@@ -5,7 +5,7 @@ import { MobilePhoneSaveIn, MobilePhoneModifyIn, MobilePhoneModifyInPatch } from
 // import { Linq } from 'https://deno.land/x/linqts@1.0.5/mod.ts';
 // import { Linq } from '../../../linqts-deno/mod.ts';
 // import { Linq } from '../../../linqjs-deno/index.js';
-import { Linq } from 'Linq';
+import { Linq } from 'linqts';
 
 @ApiDocument({
   name: 'MobilePhone',
