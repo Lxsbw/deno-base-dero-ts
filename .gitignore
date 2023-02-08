@@ -1,13 +1,9 @@
 logs/
-node_modules/
 coverage/
 .idea/
 run/
 dist/
 
-npm-debug.log
-yarn-error.log
-package-lock.json
 .DS_Store
 *.sw*
 *.un~
