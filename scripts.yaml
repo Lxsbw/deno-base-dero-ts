@@ -19,3 +19,11 @@ scripts:
 # 不好下载，弃用
 # 安装velociraptor（结合本文件，起到类似npm run效果，格式：vr run xxx / vr xxx）
 # deno install -qAn vr https://deno.land/x/velociraptor@1.5.0/cli.ts
+
+# Trex + import-map
+# deno install -A --unstable --import-map=https://deno.land/x/trex/import_map.json -n trex --no-check https://deno.land/x/trex/cli.ts
+# trex --version
+# trex install
+# trex install --map fs http fmt
+# trex i --map oak
+# deno run --allow-net --import-map=import_map.json --unstable app.ts

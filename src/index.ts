@@ -1,7 +1,7 @@
 import MobilePhoneController from './controller/mobile-phone.ts';
-import { Dero } from './deps.ts';
-import { DocumentBuilder, swagger } from './deps.ts';
-import { validationMetadatasToSchemas } from './deps.ts';
+import { Dero } from 'dero';
+import { DocumentBuilder, swagger } from 'dero_swagger';
+import { validationMetadatasToSchemas } from 'class-validator-jsonschema';
 
 class App extends Dero {
   constructor() {
