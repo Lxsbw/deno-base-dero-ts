@@ -9,4 +9,4 @@ export { IsNumber, IsString } from 'https://cdn.skypack.dev/class-validator?dts'
 
 export { Linq } from 'https://deno.land/x/linqts@1.0.10/mod.ts';
 
-// export { Linq } from 'https://deno.land/x/jslinq@1.0.7/index.js';
+// export { Linq } from 'https://deno.land/x/jslinq@1.0.8/index.js';
