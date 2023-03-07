@@ -2,10 +2,11 @@ import { BaseController, Controller, Get, Post, Put, Delete, Patch } from 'dero'
 import { ApiDocument, ApiOperation, ApiResponse, ApiParameter, ApiRequestBody } from 'dero_swagger';
 import mobilePhoneService from '../service/mobile-phone.ts';
 import { MobilePhoneSaveIn, MobilePhoneModifyIn, MobilePhoneModifyInPatch } from '../schema/request/mobile-phone.ts';
-// import { Linq } from 'https://deno.land/x/linqts@1.0.5/mod.ts';
+// import { Linq } from 'https://deno.land/x/linqts@1.2.0/mod.ts';
 // import { Linq } from '../../../linqts-deno/mod.ts';
 // import { Linq } from '../../../linqjs-deno/index.js';
 import { Linq } from 'linqts';
+// import { Linq } from 'jslinq';
 
 @ApiDocument({
   name: 'MobilePhone',
