@@ -1,5 +1,5 @@
 import { MobilePhone } from '../models/mobile-phone.ts';
-import { Bson } from '../deps.ts';
+import { Bson } from 'mongo';
 
 class mobilePhoneService {
   static async save(param: any) {

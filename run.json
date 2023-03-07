@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "deno run --allow-net --importmap=import_map.json --unstable ./src/index.ts",
+    "dev": "denon run --allow-net --importmap=import_map.json --unstable ./src/index.ts",
+    "test": "deno test --allow-net --importmap=import_map.json --unstable ./src/index.ts",
+    "prd": "bash ./src/shell/appX.sh deno-base start ./src/index.ts",
+    "stop": "bash ./src/shell/appX.sh deno-base stop"
+  }
+}

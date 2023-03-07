@@ -1,4 +1,4 @@
-import { IsNumber, IsString } from '../../deps.ts';
+import { IsNumber, IsString } from 'class-validator';
 
 export class MobilePhoneSaveIn {
   @IsString()

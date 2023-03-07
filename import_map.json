@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "class-validator": "https://cdn.skypack.dev/class-validator?dts",
+    "class-validator-jsonschema": "https://cdn.skypack.dev/class-validator-jsonschema?dts",
+    "dero": "https://deno.land/x/dero@1.2.4/mod.ts",
+    "dero_swagger": "https://deno.land/x/dero_swagger@0.0.6/mod.ts",
+    "linqts": "https://deno.land/x/linqts@1.0.9/mod.ts",
+    "mongo": "https://deno.land/x/mongo@v0.31.1/mod.ts"
+  }
+}
